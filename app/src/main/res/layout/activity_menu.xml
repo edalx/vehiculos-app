@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="ec.edu.uce.vista.MenuActivity"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+
+    <ImageButton
+        android:id="@+id/carros"
+        android:layout_width="164dp"
+        android:layout_height="90dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/car_sports" />
+
+    <ImageButton
+        android:id="@+id/reservar"
+        android:layout_width="167dp"
+        android:layout_height="90dp"
+        android:layout_margin="5dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageButton
+        android:id="@+id/backup"
+        android:layout_width="167dp"
+        android:layout_height="90dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/database_plus" />
+
+</LinearLayout>

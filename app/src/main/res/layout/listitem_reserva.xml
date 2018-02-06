@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingBottom="0dp"
+    android:paddingTop="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/car_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/car" />
+
+            <TextView
+                android:id="@+id/r_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/car_photo"
+                android:layout_toRightOf="@+id/car_photo"
+                android:text="PAA-7924"
+                android:textSize="30sp" />
+
+
+
+            <TextView
+                android:id="@+id/car_sep1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r_id"
+                android:layout_toEndOf="@+id/r_fechaPrestamo"
+                android:layout_toRightOf="@+id/r_fechaPrestamo"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=" | " />
+
+            <TextView
+                android:id="@+id/r_fechaPrestamo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r_id"
+                android:layout_toEndOf="@+id/car_photo"
+                android:layout_toRightOf="@+id/car_photo"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=" 2017/10/1994 " />
+
+            <TextView
+                android:id="@+id/r_fechaEntrega"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r_id"
+                android:layout_toEndOf="@+id/car_sep1"
+                android:layout_toRightOf="@+id/car_sep1"
+                android:text="2017/10/1994" />
+
+            <TextView
+                android:id="@+id/r_valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r_fechaPrestamo"
+                android:layout_toEndOf="@+id/car_photo"
+                android:layout_toRightOf="@+id/car_photo"
+                android:text="$142"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/r_celular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r_fechaPrestamo"
+                android:layout_toEndOf="@+id/r_valor"
+                android:layout_toRightOf="@+id/r_valor"
+                android:text="Nissan" />
+
+            <TextView
+                android:id="@+id/r_vehiculoTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r_valor"
+                android:layout_toEndOf="@+id/car_photo"
+                android:layout_toRightOf="@+id/car_photo"
+                android:paddingLeft="5dp"
+                android:text="Matriculado: NO" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
